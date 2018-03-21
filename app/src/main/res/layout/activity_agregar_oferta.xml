@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alexander.penshon20.AgregarOferta"
+    android:background="@color/colorPrimaryDark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/casanegra"
+                android:id="@+id/imagenCasa" />
+
+            <Button
+                android:text="Subir imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagen"
+                android:elevation="0dp"
+                android:onClick="onSubirImagen" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/titulo"
+                android:hint="Titulo de tu publicacion"
+                android:background="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/direccion"
+                android:hint="Direccion"
+                android:background="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/costo"
+                android:hint="Costo mensual"
+                android:background="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/normas"
+                android:hint="Normas de convivencia"
+                android:background="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/descripcion"
+                android:hint="Descripcion"
+                android:background="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/NHabitantes"
+                android:background="@color/colorPrimary"
+                android:hint="Numero de habitantes" />
+
+            <TextView
+                android:text="Quien publica:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:background="@color/colorPrimary" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+                <RadioButton
+                    android:text="Dueño"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dueño"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Visitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/visitante"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+            <TextView
+                android:text="Click en servicios que ofrece"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:background="@color/colorPrimary" />
+
+            <CheckBox
+                android:text="Wi-Fi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wifi"
+                android:background="@color/colorPrimary" />
+
+            <CheckBox
+                android:text="Permite mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mascota"
+                android:background="@color/colorPrimary" />
+
+            <CheckBox
+                android:text="Lavadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lavadora"
+                android:background="@color/colorPrimary" />
+
+            <CheckBox
+                android:text="Cocina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cocina"
+                android:background="@color/colorPrimary" />
+
+            <CheckBox
+                android:text="Baño personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/baño"
+                android:background="@color/colorPrimary" />
+
+            <CheckBox
+                android:text="Television"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv"
+                android:background="@color/colorPrimary" />
+
+            <Button
+                android:text="Publicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/publicar"
+                android:onClick="Onclick"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

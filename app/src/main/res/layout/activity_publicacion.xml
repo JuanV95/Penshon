@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexander.penshon20.Publicacion"
+    android:background="@color/colorPrimaryDark">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/principal">
+
+            <ImageView
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/titulo"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/direccion"
+                        android:textColor="@android:color/background_light" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="10dp"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sdsa"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        tools:text="Descripcion"
+                        android:text="Descripcion"
+                        android:textColor="@android:color/background_light" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@android:style/Widget.Holo.SeekBar"
+                    android:elevation="1dp"
+                    android:animateLayoutChanges="?android:attr/windowActionModeOverlay"
+                    android:backgroundTint="@color/colorPrimary">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:id="@+id/imageView2"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:background="@android:drawable/toast_frame"
+                        android:backgroundTint="@color/colorPrimary" />
+
+                    <TextView
+                        android:text="Descripcion"
+                        android:layout_height="match_parent"
+                        android:id="@+id/Descripcion"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/background_light"
+                        android:background="@android:drawable/toast_frame"
+                        android:backgroundTint="@color/colorPrimary" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/toast_frame"
+                    android:backgroundTint="@color/colorPrimary">
+
+                    <TextView
+                        android:text="Costo mensual:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sda"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Costo"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:textColor="@android:color/background_light" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@android:drawable/toast_frame"
+                    android:backgroundTint="@color/colorPrimary">
+
+                    <TextView
+                        android:text="Servicios:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/asdas"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:textColor="@android:color/background_light" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/toast_frame"
+                android:backgroundTint="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/wifi"
+                    android:id="@+id/wifi"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/tv"
+                    android:id="@+id/tv"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/mascota"
+                    android:id="@+id/mascota"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/lavadora"
+                    android:id="@+id/lavadora"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/cocina"
+                    android:id="@+id/cocina"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/bano"
+                    android:id="@+id/baño"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/toast_frame"
+                android:backgroundTint="@color/colorPrimary">
+
+                <TextView
+                    android:text="Normas:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Normas"
+                    android:textColor="@android:color/background_light" />
+
+            </TableRow>
+
+            <TextView
+                android:text="Comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/comentario1"
+                android:background="@android:drawable/zoom_plate" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/comentario2"
+                android:background="@android:drawable/zoom_plate" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/comentario3"
+                android:background="@android:drawable/zoom_plate" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/TxtNombre"
+                android:hint="Escriba comentario" />
+
+            <Button
+                android:text="Enviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

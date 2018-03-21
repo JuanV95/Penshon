@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexander.penshon20.Login"
+    android:background="@color/colorPrimaryDark"
+    android:baselineAligned="false">
+
+
+    <ScrollView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="¡Bienvenido!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="36sp"
+                android:fontFamily="casual"
+                android:textColor="@android:color/holo_orange_dark"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:layout_below="@+id/userName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/background_material_red"
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="false"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="106dp"
+                android:layout_height="100dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_de_usuario">
+
+                <EditText
+                    android:id="@+id/userName"
+                    style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="23dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    app:layout_constraintBottom_toTopOf="@+id/userPass"
+                    tools:layout_constraintBottom_creator="1"
+                    tools:layout_editor_absoluteX="0dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_userPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrase_a">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/userPass"
+                    android:password="true"
+                    android:background="@color/colorPrimaryDark"
+                    tools:layout_constraintRight_creator="100"
+                    tools:layout_constraintBottom_creator="100"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintRight_toRightOf="@+id/userName"
+                    tools:layout_constraintLeft_creator="1"
+                    app:layout_constraintLeft_toLeftOf="@+id/userName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:text="@string/ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:onClick="onBuscar"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                tools:background="@color/colorPrimary"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintBottom_creator="1"
+                app:layout_constraintBottom_toTopOf="@+id/registro"
+                app:layout_constraintRight_toRightOf="@+id/userPass"
+                tools:layout_constraintLeft_creator="1"
+                app:layout_constraintLeft_toLeftOf="@+id/userPass" />
+
+            <Button
+                android:id="@+id/registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/registrar"
+                android:textColor="@android:color/white"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintRight_toRightOf="@+id/login"
+                tools:background="@color/colorPrimary"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
